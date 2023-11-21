@@ -21,6 +21,7 @@ h1, h2, h3, h4, h5 {
 /* Estilo para el contenido principal */
 header, main, footer {
     max-width: 375px;
+    margin: 0 auto;
     text-align: center;
     padding: 20px;
   }
@@ -66,6 +67,12 @@ header, main, footer {
     display: none;
     list-style: none;
     padding: 0;
+  }
+
+  @media only screem and (max-width: 375px) {
+    header, main, footer {
+      padding: 10px;
+    }
   }
   
   input:checked ~ ul {
@@ -1357,8 +1364,9 @@ p {
 
 /* Pagina Servicios */
 
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
-
+#servicios{
+  margin-top: -40px;
+}
 .pagina-servicios .cursos-container {
     width: 375px;
     display: flex;
