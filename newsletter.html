@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es" class="pagina-newsletter">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter - WINVISION</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://fontawesome.com/icons/bars?f=classic&s=solid">
+
+</head>
+<body>
+<!--Header-->
+<header>
+    <nav>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon menu-toggle-label"><i class="fas fa-bars"></i></label>
+      <a href="index.html">
+        <img class="foto" src="imagenes/logowinvision.svg" alt="logo winvision" id="logomenu"></a>  <ul class="nav">
+        <li>
+          <a href="quienes.html">quienes somos</a>
+        </li>
+        <li>
+          <a href="marketing.html">servicios</a>
+        </li>
+        <li>
+          <a href="newsletter.html">newsletter</a>
+        </li>
+        <li>
+          <a href="partners.html">partners</a>
+        </li>
+        <li>
+          <a href="contacto.html">contacto</a>
+        </li>
+      </ul>
+    </nav>
+    </div>
+    <img src="imagenes/newsletter.jpg" alt="banner de newsletter" id="banner">
+  </header>
+
+  <main>
+    
+    <!-- Sección de suscripción al boletín -->
+    <section id="newsletter">
+      <div class="newsletter-container">
+          <h2>Suscríbete a nuestro boletín</h2>
+          <img src="imagenes/logowinvision.svg" alt="logo de winvision" id="logo-news">
+          <p id="parra-news">Recibe las últimas noticias y actualizaciones directamente en tu bandeja de entrada.</p>
+          <form id="newsletter-form" method="post" onsubmit="return redireccionar()">
+              <div class="form-group">
+                  <label for="email">Correo Electrónico</label>
+                  <input type="email" name="email" id="email" class="form-control" placeholder="Ingresa tu correo electrónico" required />
+                  <input type="submit" id="submit" class="submit-button" value="Suscríbete">
+              </div>
+          </form>
+      </div>
+  
+      <script>
+          function redireccionar() {
+              // Puedes agregar lógica adicional aquí si es necesario
+              window.location.href = "gracias.html";
+              return false; // Esto evita que el formulario se envíe de la manera tradicional
+          }
+      </script>
+  </section>
+  
+
+    <section id="noticias">
+      <article class="noticia">
+        <img src="imagenes/deportesdigitales.jpg" alt="evento deportivo digital">
+        <h3>Deporte digital: Una revolucion de experiencia para los fanaticos</h3>
+        <p>Una marca deportiva se une a la vanguardia tecnológica para transformar la forma en que los aficionados viven y sienten el deporte, marcando el inicio de una era de experiencias digitales inigualables.</p>
+        <a href="marketing.html">Leer más</a>
+      </article>
+  
+      <article class="noticia">
+        <img src="imagenes/apps fitness.jpg" alt="muestra de app deportiva con diferentes funciones que tiene">
+        <h3>Desafio Fitness: las mejores apps para tu rutina cotidiana</h3>
+        <p>Una nueva aplicación de fitness está cambiando la forma en que abordamos el ejercicio diario. Con funciones innovadoras y accesibilidad sin igual, esta aplicación promete hacer que mantenerse activo sea más fácil y emocionante que nunca. Por eso te queremos compartir las mejores apps del mercado</p>
+        <a href="marketing.html">Leer más</a>
+      </article>
+    </section>
+  </main>
+
+ <!-- Footer -->
+ <footer>
+    <div id="footer-logo">
+    <img src="imagenes/logowinvision.svg" alt="logo winvision" id="logofooter">
+                   
+    </div>
+    <div id="rrss"> <!-- rrss -->
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+     <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+     <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+   <div id="informacion"> <!-- Datos -->
+     <address> dirección: Calle falsa 123, CABA, Argentina
+   <br id="correo"> correo electrónico: contacto@winvision.com
+    </address>
+  </div>
+   <div id="enlaces-legales">
+  <div class="columna">
+  <a href="legales.html">preguntas frecuentes</a>
+  </div>
+  <div class="columna">
+  <a href="legales.html">legales</a>
+  </div>
+  </div>
+  <div>
+   </div>
+  <p id="parra-footer">derechos reservados &copy; 2023 WINVISION</p>  <!-- Derechos -->
+  
+  <script src="https://kit.fontawesome.com/b6eafbd909.js" crossorigin="anonymous"></script>
+          
+  <!-- Botón de WhatsApp -->
+  <div class="whatsapp-button">
+    <a href="https://wa.me/1234567890" target="_blank">
+   <i class="fa-brands fa-whatsapp"></i>
+  </a>
+   </div>
+  
+  </footer>

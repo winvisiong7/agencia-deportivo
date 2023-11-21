@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es" class="pagina-contacto">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - WINVISION</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://fontawesome.com/icons/bars?f=classic&s=solid">
+
+</head>
+<body>
+<!--Header-->
+<header>
+    <nav>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon menu-toggle-label"><i class="fas fa-bars"></i></label>
+      <a href="index.html">
+        <img class="foto" src="imagenes/logowinvision.svg" alt="logo winvision" id="logomenu"></a>  <ul class="nav">
+        <li>
+          <a href="quienes.html">quienes somos</a>
+        </li>
+        <li>
+          <a href="marketing.html">servicios</a>
+        </li>
+        <li>
+          <a href="newsletter.html">newsletter</a>
+        </li>
+        <li>
+          <a href="partners.html">partners</a>
+        </li>
+        <li>
+          <a href="contacto.html">contacto</a>
+        </li>
+      </ul>
+    </nav>
+    </div>
+    <img src="imagenes/contacto.jpg" alt="banner de contacto" id="banner">
+  </header>
+
+<!-- MAIN --> 
+
+<main>
+    <!-- Formulario -->
+    <div class="container">
+        <h1 id="formulario-titulo" class="text-center">Formulario de Consulta</h1>
+        <p id="description" class="description text-center">Cuéntanos tu consulta y nos pondremos en contacto contigo pronto.</p>
+    
+        <form id="survey-form" class="mi-formulario">
+            <section>
+                <fieldset>
+                    <legend>Información Personal</legend>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" id="apellido" class="form-control" placeholder="Ingresa tu apellido">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Ingresa tu correo electrónico" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Fecha de Nacimiento <span class="clue"></span></label>
+                        <input type="date" name="age" id="age" class="form-control">
+                    </div>
+                </fieldset>
+            </section>
+    
+            <section>
+                <fieldset>
+                    <legend>Ocupación</legend>
+                    <div class="form-group">
+                        <label for="role">¿Qué opción describe tu ocupación?</label>
+                        <select name="role" id="role" class="form-control" required>
+                            <option disabled selected value>Elegir opción</option>
+                            <option value="estudiante">Estudiante</option>
+                            <option value="empleado">Empleado</option>
+                            <option value="desocupado">Desocupado</option>
+                        </select>
+                    </div>
+                </fieldset>
+            </section>
+    
+            <section>
+                <fieldset>
+                    <legend>Preferencias</legend>
+                    <div class="form-group">
+                        <label for="most-like">¿Cuál es tu sección preferida del sitio web?</label>
+                        <select name="mostlike" id="most-like" class="form-control" required>
+                            <option disabled selected value>Seleccionar una opción</option>
+                            <option value="challenges">Acerca de...</option>
+                            <option value="projects">Proyectos</option>
+                            <option value="community">Contacto</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="comments">¿Deseas agregar alguna sugerencia?</label>
+                        <textarea name="comment" id="comments" class="input-textarea" placeholder="Ingresa tu comentario..."></textarea>
+                    </div>
+                </fieldset>
+            </section>
+    
+            <section>
+                <div class="form-group">
+                    <input type="submit" id="submit" class="submit-button" value="Enviar">
+                </div>
+            </section>
+        </form>
+    </div>
+
+    <img src="imagenes/logowinvision.svg" alt="Logo de la marca" id="logo">
+    <img src="imagenes/winvision.svg" alt="nombre de la marca con su tipografía" id="tipo-winvision">
+
+
+    <h4>Puede comunicarse con nosotros de otra manera:</h4>
+
+    <div class="iconos">
+        <section>
+            <i class="fas fa-map-marker-alt"></i>
+            <h4>dirección:</h4>
+            <p class="icon-text"> buenos Aires, argentina</p>
+        </section>
+        <section>
+            <i class="fas fa-phone"></i>
+            <h4>teléfono:</h4>
+            <p class="icon-text"> +54 911 123456789</p>
+        </section>
+        <section>
+            <i class="fas fa-envelope"></i>
+            <h4>email:</h4>
+            <p class="icon-text"> contacto@winvision.com</p>
+        </section>
+    </div>
+    
+    <iframe src="https://www.google.com/maps/d/embed?mid=12RmWj2NC3X-KVs222gc1eImkMLM&hl=es_419&ehbc=2E312F" id="map-container"></iframe>
+</main>
+
+       <!-- Footer -->
+       <footer>
+        <div id="footer-logo">
+            <img src="imagenes/logowinvision.svg" alt="logo winvision" id="logofooter">
+         
+        </div>
+        <div id="rrss"> <!-- rrss -->
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div id="informacion"> <!-- Datos -->
+            <address>
+                dirección: Calle falsa 123, CABA, Argentina
+                <br id="correo">
+                correo electrónico: contacto@winvision.com
+            </address>
+        </div>
+        <div id="enlaces-legales">
+            <div class="columna">
+                <a href="legales.html">preguntas frecuentes</a>
+            </div>
+            <div class="columna">
+                <a href="legales.html">legales</a>
+            </div>
+        </div>
+        <div>
+        </div>
+        <p id="parra-footer">derechos reservados &copy; 2023 WINVISION</p>  <!-- Derechos -->
+  
+    <script src="https://kit.fontawesome.com/b6eafbd909.js" crossorigin="anonymous"></script>
+
+    <!-- Botón de WhatsApp -->
+<div class="whatsapp-button">
+    <a href="https://wa.me/1234567890" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</div>
+</footer>
